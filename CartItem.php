@@ -29,7 +29,7 @@ class CartItem
     public function increaseQuantity() {
 
         if($this->quantity < $this->product->getInStock()) {
-            $this->quantity ++;
+            $this->quantity +=1;
         } else {
             echo "Kan inte lägga till. Slut i lager";
         }
